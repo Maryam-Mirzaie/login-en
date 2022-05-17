@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+        .bg-custom {
+            background-color: skyblue;
+        }
+
+        .color-custom {
+            color: #87ceeb;
+        }
+
+        .text-hover-custom:hover {
+            color: cornflowerblue;
+            font-weight: bold;
+        }
+
+        .text-hover-custom:active {
+            text-shadow: 2px 3px 5px gray;
+        }
+
+        .btn-hover-custom:hover {
+            background-color: skyblue;
+            border : 1px solid cornflowerblue;
+        }
+
+        .btn-hover-custom:active {
+            background-color: skyblue;
+            border : 2px solid cornflowerblue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="bg-custom">
+    <div class="row align-items-center">
+        <div class="col-lg-5 col-md-8 col-sm-12 mx-auto">
+            <div class="p-5 rounded-3 m-5  bg-white shadow">
+                <form>
+                    <fieldset>
+                        <legend><span class="font-weight-bold color-custom">Register</span></legend>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="Name" placeholder="Name">
+                            <label for="Name">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="Email" placeholder="name@example.com">
+                            <label for="Email">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="Phone" placeholder="0930*******"  pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
+                            <label for="Phone">Phone Number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="Password" placeholder="Password">
+                            <label for="Password">Password</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="RePassword" placeholder="Password">
+                            <label for="RePassword">Confirm Password</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" role="switch" id="Check">
+                            <label class="form-check-label" for="Check">I Agree The Rules</label>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="submit" value="Register" class="btn bg-custom btn-hover-custom btn-block w-100" />
+                        </div>
+                        <a>
+
+                        </a>
+                    </fieldset>
+                </form>
+                <div class="text-center mb-2">
+                    <a href="#" class="text-decoration-none font-weight-bold text-hover-custom">Already Have an Account?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
