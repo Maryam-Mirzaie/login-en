@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!--Font-Awsome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+        .brand {
+          font-weight: bold;
+          font-style: italic;
+          text-shadow: 1px 2px 3px blue;
+        }
+        </style>
+</head>
+<body dir="rtl">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+        <a class="navbar-brand" href="#"><span class="brand">Brand</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-5">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="fa fa-home"></i> صفحه اصلی <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-cogs"></i> خدمات </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="fa fa-user"></i> حساب من
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#"><i class="fa fa-sign-in p-1 mr-1 rounded-circle"></i>ورود</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-user-plus p-1 mr-1  rounded-circle"></i>ثبت نام</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-sign-out p-1 mr-1  rounded-circle"></i>خروج</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"><i class="fa fa-briefcase"></i> سبد من</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-envelope"></i> تماس با ما </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-info-circle"></i>درباره ما</a>
+            </li>
+          </ul>
+          <div class="d-none d-lg-block pt-3 mx-auto">
+            <form class="form-inline">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="دنبال چی می گردی؟" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-light my-2 my-sm-0" type="submit">جستجو</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </nav>
+      <div class="d-lg-none bg-dark p-3 text-center">
+        <form class="my-2">
+          <input class="form-control mr-sm-2" type="search" placeholder="دنبال جی می گردی؟" aria-label="Search">
+          <button class="btn btn-outline-light mt-2" type="submit">جستجو</button>
+        </form>
+      </div>
+
+</body>
+</html>
